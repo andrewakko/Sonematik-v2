@@ -1,0 +1,2 @@
+/Users/awk/Documents/ProgramDoc/OpenFrameWorks/oF/openframeworks-openFrameworks-24512c4/apps/Sonematik Study/_3_2_Sonematik_/src/OscHandler.cpp: In member function 'void OscHandler::update()':
+/Users/awk/Documents/ProgramDoc/OpenFrameWorks/oF/openframeworks-openFrameworks-24512c4/apps/Sonematik Study/_3_2_Sonematik_/src/OscHandler.cpp:300: error: 'class DataModel' has no member named 'renderB'
