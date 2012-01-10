@@ -49,7 +49,8 @@ void testApp::setup(){
 	fogStart=4.0;
 	fogEnd= 100.0;
 	
-	fbo.allocate(ofGetWidth(), ofGetHeight());	
+	lastWidth = 0;
+	lastHeight = 0;
 }
 
 //--------------------------------------------------------------
@@ -59,6 +60,13 @@ void testApp::update(){
 	//cout << "testApp: "<< data.kr1 << endl;
 ///////////////////
 	
+	if( lastWidth != ofGetWidth() || lastHeight != ofGetWidth() ){
+		lastWidth = ofGetWidth();
+		lastHeight = ofGetWidth();
+		fbo.allocate(ofGetWidth(), ofGetHeight());
+	}
+	
+		
 }
 
 // --------------------------------------------------------------
