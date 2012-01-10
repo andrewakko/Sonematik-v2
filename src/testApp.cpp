@@ -49,7 +49,7 @@ void testApp::setup(){
 	fogStart=4.0;
 	fogEnd= 100.0;
 	
-	fbo.allocate(1000, 1000);	
+	fbo.allocate(ofGetWidth(), ofGetHeight());	
 }
 
 //--------------------------------------------------------------
