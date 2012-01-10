@@ -82,8 +82,7 @@ void Mesh::draw(){
 						glBegin(GL_LINE_STRIP);
 						break;
 						
-				}
-			
+				}			
 			
 			//	glBegin(GL_POINTS); // sky
 			//	glBegin(GL_LINES);
