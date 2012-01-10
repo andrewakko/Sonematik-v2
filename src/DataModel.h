@@ -28,17 +28,15 @@ public:
 	
 	float scale;
 	
-	int formA;
-	int formB;
-	
-	int renderA;
-	int renderB;
 	
 	
 	// Mesh
 
 	
 	//
+	
+	int M1_render;
+	int M1_form;
 	
 	float M1_kr1;
 	float M1_kr2;
@@ -89,6 +87,9 @@ public:
 	
 	
 	// Mesh2
+	
+	int M2_render;
+	int M2_form;
 	
 	float M2_kr1;
 	float M2_kr2;

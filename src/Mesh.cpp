@@ -56,7 +56,7 @@ void Mesh::draw(){
 		{
 			
 			
-				switch (data->renderA) {
+				switch (data->M1_render) {
 						
 					case 1:
 						glBegin(GL_POINTS);
@@ -74,6 +74,9 @@ void Mesh::draw(){
 						glBegin(GL_QUAD_STRIP);
 						break;
 						
+					case 5:
+						glBegin(GL_LINE_LOOP);
+						break;
 						
 					default:
 						glBegin(GL_LINE_STRIP);
@@ -100,14 +103,15 @@ void Mesh::draw(){
 				float v = ofMap(iv, 0, data->M1_vCount, data->M1_vMin, data->M1_vMax);
 				
 				//
-				switch(data->formA) {
+				switch(data->M1_form) {
 						
 						float x;
 						float y;
 						float z;
 						
-					case 1:
 						
+						
+					case 1:
 						
 						x = cos(u) * (3*cos(v)  * data->M1_kr1 * ofRandom(1,data->M1_noise) - cos(3*v));
 						y = sin(u) * (3*cos(v)  * data->M1_kr2 * ofRandom(1,data->M1_noise) - cos(3*v));
@@ -121,10 +125,7 @@ void Mesh::draw(){
 						break;
 						
 					case 2:
-						
-						// case formB	
-						
-						// SECOND FORM
+
 						x = 2 * sin(u) * data->M1_kr1 * ofRandom(1,data->M1_noise);
 						y = 2 * sin(v * data->M1_kr2 * ofRandom(1,data->M1_noise));
 						z = 2 * sin(u+v) * data->M1_kr3 * ofRandom(1,data->M1_noise);
@@ -135,7 +136,116 @@ void Mesh::draw(){
 						glVertex3f(x * -1.25 * data->M1_v3x, y * -1.75 * data->M1_v3y, z * data->M1_v3z);
 						
 						break;
-						//	*/
+						
+					case 3:
+						
+						x = data->M1_kr1 * ofRandom(1,data->M1_noise) *2 * (sin(3*u) * 2 / (2 + cos(v)));
+						y = data->M1_kr2 * ofRandom(1,data->M1_noise) *2 * (sin(3*u) * 2 / (2 + cos(u)));
+						z = data->M1_kr3 * ofRandom(1,data->M1_noise) *2 * sin(v+u) ;
+						
+						glColor4f(1.0,1.0,1.0,data->M1_alpha);
+						glVertex3f(x * data->M1_v1x, y * data->M1_v1y, z * data->M1_v1z);
+						glVertex3f(x * 0.75 * data->M1_v2x, y * 0.75 * data->M1_v2y, z * data->M1_v2z); 
+						glVertex3f(x * 1.25 * data->M1_v3x, y * 1.75 * data->M1_v3y, z * data->M1_v3z);
+						glVertex3f(x * 0.25 * data->M1_v3x, y * 0.25 * data->M1_v3y, z * data->M1_v3z);
+						
+						break;
+						
+						
+					case 4:
+						
+						x = data->M1_kr1 * ofRandom(1,data->M1_noise) * 0.75 * (sin(u) * (2 + cos(v)));
+						y = data->M1_kr2 * ofRandom(1,data->M1_noise) * 0.75 * (sin(v) * (2 + cos(u)));
+						z = data->M1_kr3 * ofRandom(1,data->M1_noise) * 0.75 * cos(u);
+						
+						glColor4f(1.0,1.0,1.0,data->M1_alpha);
+						glVertex3f(x * data->M1_v1x, y * data->M1_v1y, z * data->M1_v1z);
+						glVertex3f(x * 0.75 * data->M1_v2x, y * 0.75 * data->M1_v2y, z * data->M1_v2z); 
+						glVertex3f(x * 1.25 * data->M1_v3x, y * 1.75 * data->M1_v3y, z * data->M1_v3z);
+						
+						break;
+						
+						
+					case 5:
+						
+						x = data->M1_kr1 * ofRandom(1,data->M1_noise) * 5.5 * (cos(u)  - 0.5, sin(v) - 0.75   , cos(3*v) / 3);
+						y = data->M1_kr2 * ofRandom(1,data->M1_noise) * 5.5 * (cos(u) + 0.5 , sin(u) - 0.75/2 , cos(3*u) / 3);
+						z = data->M1_kr3 * ofRandom(1,data->M1_noise) * 5.5 * (cos(u) , sin(v) + 0.75   , cos(3*u) / 3);
+						
+						glColor4f(1.0,1.0,1.0,data->M1_alpha);
+						glVertex3f(x * data->M1_v1x, y * data->M1_v1y, z * data->M1_v1z);
+						glVertex3f(x * 0.75 * data->M1_v2x, y * 0.75 * data->M1_v2y, z * data->M1_v2z); 
+						glVertex3f(x * 1.25 * data->M1_v3x, y * 1.75 * data->M1_v3y, z * data->M1_v3z);
+						
+						break;
+				
+					case 6:
+						
+						x = data->M1_kr1 * ofRandom(1,data->M1_noise)* 0.25 * 0.5 * ((cos(u) + cos(3*v)) + cos(2*u) + cos(4*v)) * TWO_PI;
+						y = data->M1_kr2 * ofRandom(1,data->M1_noise)* 0.25 * 0.6 * (sin(u) + 10 * sin(3*v)) * TWO_PI;
+						z = data->M1_kr3 * ofRandom(1,data->M1_noise)* 0.25 * 0.4 * (sin(3*u) * sin(5*v/2) + 4*sin(4*u) - 2 * sin(6*v)) * TWO_PI;
+						
+						glColor4f(1.0,1.0,1.0,data->M1_alpha);
+						glVertex3f(x * data->M1_v1x, y * data->M1_v1y, z * data->M1_v1z);
+						glVertex3f(x * 0.75 * data->M1_v2x, y * 0.75 * data->M1_v2y, z * data->M1_v2z); 
+						glVertex3f(x * 1.25 * data->M1_v3x, y * 1.75 * data->M1_v3y, z * data->M1_v3z);
+						
+						break;
+						
+					case 7:
+						
+						x = data->M1_kr1 * ofRandom(1,data->M1_noise) * 0.5 * (sin(u) * cos(v)) - (2*sin(3*u) * cos(3*v) / 3);
+						y = data->M1_kr2 * ofRandom(1,data->M1_noise) * 0.6 * (sin(u) * sin(v)) + (2*sin(3*u) * sin(3*v) / 3);
+						z = data->M1_kr3 * ofRandom(1,data->M1_noise) * 0.4 * cos(2*u) * cos(2*v);
+						
+						glColor4f(1.0,1.0,1.0,data->M1_alpha);
+						glVertex3f(x * data->M1_v1x, y * data->M1_v1y, z * data->M1_v1z);
+						glVertex3f(x * 0.75 * data->M1_v2x, y * 0.75 * data->M1_v2y, z * data->M1_v2z); 
+						glVertex3f(x * 1.25 * data->M1_v3x, y * 1.75 * data->M1_v3y, z * data->M1_v3z);
+						
+						break;
+						
+						
+					case 8:
+						
+						x = data->M1_kr1 * ofRandom(1,data->M1_noise) * 0.75 * cos(u) * (3*cos(v) - cos(3*v)) ;
+						y = data->M1_kr2 * ofRandom(1,data->M1_noise) * 0.75 * sin(u) * (3*cos(v) - cos(3*v)) ;
+						z = data->M1_kr3 * ofRandom(1,data->M1_noise) * 0.75 * 3 * sin(v) - sin(3*v) ;
+						
+						glColor4f(1.0,1.0,1.0,data->M1_alpha);
+						glVertex3f(x * data->M1_v1x, y * data->M1_v1y, z * data->M1_v1z);
+						glVertex3f(x * 0.75 * data->M1_v2x, y * 0.75 * data->M1_v2y, z * data->M1_v2z); 
+						glVertex3f(x * 1.25 * data->M1_v3x, y * 1.75 * data->M1_v3y, z * data->M1_v3z);
+						
+						break;
+						
+					case 9:
+						
+						x = data->M1_kr1 * ofRandom(1,data->M1_noise) * 0.75 * u*v*v + 3 * v*v*v*v;
+						y = data->M1_kr2 * ofRandom(1,data->M1_noise) * 0.75 * -2 *u* v - 4 * v*v*v ;
+						z = data->M1_kr3 * ofRandom(1,data->M1_noise) * 0.75 * u ;
+						
+						glColor4f(1.0,1.0,1.0,data->M1_alpha);
+						glVertex3f(x * data->M1_v1x, y * data->M1_v1y, z * data->M1_v1z);
+						glVertex3f(x * 0.75 * data->M1_v2x, y * 0.75 * data->M1_v2y, z * data->M1_v2z); 
+						glVertex3f(x * 1.25 * data->M1_v3x, y * 1.75 * data->M1_v3y, z * data->M1_v3z);
+						
+						break;
+						
+						
+					case 10:
+						
+						x = data->M1_kr1 * ofRandom(1,data->M1_noise) * 0.75 * u;
+						y = data->M1_kr2 * ofRandom(1,data->M1_noise) * 0.75 * v ;
+						z = data->M1_kr3 * ofRandom(1,data->M1_noise) * 0.75 * log(cos(u*0.8)/cos(v*0.8))/0.8;
+						
+						glColor4f(1.0,1.0,1.0,data->M1_alpha);
+						glVertex3f(x * data->M1_v1x, y * data->M1_v1y, z * data->M1_v1z);
+						glVertex3f(x * 0.75 * data->M1_v2x, y * 0.75 * data->M1_v2y, z * data->M1_v2z); 
+						glVertex3f(x * 1.25 * data->M1_v3x, y * 1.75 * data->M1_v3y, z * data->M1_v3z);
+						
+						break;
+						
 						
 					default:
 						

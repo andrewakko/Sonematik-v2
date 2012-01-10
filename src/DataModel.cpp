@@ -21,8 +21,12 @@ DataModel::DataModel(){
 		
 	// MESH
 	
-	formA = true;
-	formB = false;
+	M1_form = true;
+	M2_form = true;
+	
+	M1_render = 5;
+	M2_render = 5;
+	
 	
 	// max that for loop goes U horizontal
 	M1_uCount = 5;

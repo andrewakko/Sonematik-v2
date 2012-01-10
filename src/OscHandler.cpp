@@ -80,15 +80,15 @@ void OscHandler :: update(){
 			
 			///////////////////////////////////////////// Mesh
 			
-			if ( m.getAddress() == "/live/Mesh1/formA" )
+			if ( m.getAddress() == "/live/Mesh1/form" )
 			{
-				data->formA = m.getArgAsInt32(0);
+				data->M1_form = m.getArgAsInt32(0);
 			}
 			
 			
-			if ( m.getAddress() == "/live/Mesh1/renderA" )
+			if ( m.getAddress() == "/live/Mesh1/render" )
 			{
-				data->renderA = m.getArgAsInt32(0);
+				data->M1_render  = m.getArgAsInt32(0);
 			}
 			
 			
@@ -289,15 +289,15 @@ void OscHandler :: update(){
 			///////////////////////////////////////////////////// MESH2
 			
 			
-			if ( m.getAddress() == "/live/Mesh1/formB" )
+			if ( m.getAddress() == "/live/Mesh2/form" )
 			{
-				data->formB = m.getArgAsInt32(0);
+				data->M2_form = m.getArgAsInt32(0);
 			}
 			
 			
-			if ( m.getAddress() == "/live/Mesh1/renderB" )
+			if ( m.getAddress() == "/live/Mesh2/render" )
 			{
-				data->renderB = m.getArgAsInt32(0);
+				data->M2_render  = m.getArgAsInt32(0);
 			}
 			
 			//

@@ -64,6 +64,8 @@ private:
 	
 	void showInfo();
 	
+	ofFbo fbo;
+	
 };
 
 

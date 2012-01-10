@@ -49,7 +49,7 @@ void testApp::setup(){
 	fogStart=4.0;
 	fogEnd= 100.0;
 	
-	
+	fbo.allocate(1000, 1000);	
 }
 
 //--------------------------------------------------------------
@@ -66,6 +66,8 @@ void testApp::draw(){
 	
 	glClearColor(data.blackWhite, data.blackWhite, data.blackWhite, 1.0); 
 	
+	fbo.begin();
+	
 	glClear(GL_COLOR_BUFFER_BIT); 
 	glDisable(GL_FOG); //dis the fog
 	//ofDisableAlphaBlending();
@@ -79,12 +81,16 @@ void testApp::draw(){
 	ofRotateZ(data.rotateZ);
 	cam.setDistance(data.camPos);	
 	
+	
 	myMesh.draw();
 	myMesh2.draw();
 	
 	cam.end();
 	ofPopStyle();
 	
+	fbo.end();
+	
+	fbo.draw(0, 0);
 	
 	// INFO 
 	
