@@ -39,6 +39,9 @@ public:
 	float centerX;
 	float centerY;
 	
+	float lastWidth;
+	float lastHeight;
+	
 	// INFOS
 	bool showMsg;
 	
