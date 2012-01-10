@@ -17,6 +17,7 @@ void testApp::setup(){
 	glEnable(GL_NORMALIZE);
 	glEnable(GL_LINE_SMOOTH);
 	ofEnableSmoothing();
+	
 	// shade
 	glShadeModel (GL_SMOOTH);
 	glEnable(GL_VERTEX_PROGRAM_POINT_SIZE);  
@@ -37,9 +38,6 @@ void testApp::setup(){
 	cam.setGlobalPosition(ofVec3f(0,0,100));
 	///
 	
-	
-	
-	
 	showMsg = true; // for the info toggle
 	// play in center // im not using thissss
 	centerX = ofGetScreenWidth() * 0.5;
@@ -50,14 +48,14 @@ void testApp::setup(){
 	fogEnd= 100.0;
 	
 	fbo.allocate(ofGetWidth(), ofGetHeight());	
+	
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
 	
 	myOsc.update();
-	//cout << "testApp: "<< data.kr1 << endl;
-///////////////////
+
 	
 }
 
@@ -70,8 +68,7 @@ void testApp::draw(){
 	
 	glClear(GL_COLOR_BUFFER_BIT); 
 	glDisable(GL_FOG); //dis the fog
-	//ofDisableAlphaBlending();
- 
+	
 	ofPushStyle();
 	ofEnableAlphaBlending();
 	//  -- Start Camera
@@ -89,7 +86,6 @@ void testApp::draw(){
 	ofPopStyle();
 	
 	fbo.end();
-	
 	fbo.draw(0, 0);
 	
 	// INFO 
