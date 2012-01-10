@@ -326,7 +326,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>EA5D2AC314BD0121007B377F</string>
+										<string>EA5D2ADF14BD03A5007B377F</string>
 										<key>history</key>
 										<array>
 											<string>EAD8985414624BBD0023B56B</string>
@@ -346,7 +346,7 @@
 											<string>EA5D2ABF14BD0121007B377F</string>
 											<string>EA5D2AC014BD0121007B377F</string>
 											<string>EA5D2AC114BD0121007B377F</string>
-											<string>EA5D2AC214BD0121007B377F</string>
+											<string>EA5D2AC314BD0121007B377F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -404,9 +404,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>EA5D2AC414BD0121007B377F</string>
+				<string>EA5D2ADC14BD0317007B377F</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>EA5D2AC514BD0121007B377F</string>
+				<string>EA5D2ADD14BD0317007B377F</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -544,10 +544,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>EA5D2ACE14BD0121007B377F</string>
-		<string>EA5D2ACF14BD0121007B377F</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>EA5E1328143BB0EA00CDF7C6</string>
 		<string>/Users/awk/Documents/ProgramDoc/OpenFrameWorks/oF/openframeworks-openFrameworks-24512c4/apps/Sonematik Study/_3_2_Sonematik_/_3_Sonematik.xcodeproj</string>
 	</array>
@@ -629,7 +625,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>EA5E1328143BB0EA00CDF7C6</string>
-				<string>EA5D2AC614BD0121007B377F</string>
+				<string>EA5D2ADE14BD0317007B377F</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

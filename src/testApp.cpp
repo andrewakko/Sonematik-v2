@@ -43,11 +43,14 @@ void testApp::setup(){
 	centerX = ofGetScreenWidth() * 0.5;
 	centerY = ofGetScreenHeight() * -0.5;
 	// fog
+	
 	lightDensity = 0.5;
 	fogStart=4.0;
 	fogEnd= 100.0;
 	
-	fbo.allocate(ofGetWidth(), ofGetHeight());	
+	
+	lastWidth = 0;
+	lastHeight = 0;
 	
 }
 
@@ -57,6 +60,13 @@ void testApp::update(){
 	myOsc.update();
 
 	
+	if( lastWidth != ofGetWidth() || lastHeight != ofGetWidth() ){
+		lastWidth = ofGetWidth();
+		lastHeight = ofGetWidth();
+		fbo.allocate(ofGetWidth(), ofGetHeight());
+	}
+	
+		
 }
 
 // --------------------------------------------------------------
