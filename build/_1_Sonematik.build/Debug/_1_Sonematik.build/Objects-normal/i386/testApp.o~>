@@ -1,3 +1,0 @@
-/Users/awk/Documents/ProgramDoc/OpenFrameWorks/oF/openframeworks-openFrameworks-24512c4/apps/Sonematik Study/_1_Sonematik/src/testApp.cpp: In member function 'virtual void testApp::setup()':
-/Users/awk/Documents/ProgramDoc/OpenFrameWorks/oF/openframeworks-openFrameworks-24512c4/apps/Sonematik Study/_1_Sonematik/src/testApp.cpp:23: error: 'LightPos' was not declared in this scope
-/Users/awk/Documents/ProgramDoc/OpenFrameWorks/oF/openframeworks-openFrameworks-24512c4/apps/Sonematik Study/_1_Sonematik/src/testApp.cpp:24: error: 'Ambient' was not declared in this scope
