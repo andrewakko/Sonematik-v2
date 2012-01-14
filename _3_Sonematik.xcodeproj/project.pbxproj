@@ -24,6 +24,7 @@
 		E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
 		E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
 		E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		EA0F398614BF8A0D0071C365 /* ofxMSAInteractiveObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0F398414BF8A0D0071C365 /* ofxMSAInteractiveObject.cpp */; };
 		EA29D653148725A10053E097 /* Mesh2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA29D652148725A10053E097 /* Mesh2.cpp */; };
 		EA6945C7144D3268007B6B41 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA6945C6144D3268007B6B41 /* Mesh.cpp */; };
 		EA76A7521473234400C4E116 /* DataModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA76A7511473234400C4E116 /* DataModel.cpp */; };
@@ -86,6 +87,9 @@
 		E4C2424610CC5A17004149E2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		EA0F398414BF8A0D0071C365 /* ofxMSAInteractiveObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMSAInteractiveObject.cpp; sourceTree = "<group>"; };
+		EA0F398514BF8A0D0071C365 /* ofxMSAInteractiveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMSAInteractiveObject.h; sourceTree = "<group>"; };
+		EA0F39C514BF8D2B0071C365 /* MyTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTestObject.h; sourceTree = "<group>"; };
 		EA29D651148725A10053E097 /* Mesh2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh2.h; sourceTree = "<group>"; };
 		EA29D652148725A10053E097 /* Mesh2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh2.cpp; sourceTree = "<group>"; };
 		EA6945C5144D3268007B6B41 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				EA0F397414BF89E10071C365 /* ofxMSAInteractiveObject */,
 				EAD898121462461C0023B56B /* ofxOsc */,
 			);
 			name = addons;
@@ -199,6 +204,7 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				EA0F39C014BF8D020071C365 /* Warp */,
 				EA76A74D1473230F00C4E116 /* Data */,
 				EAB295C41469EF4F0007B482 /* Osc */,
 				EA6945C2144D3249007B6B41 /* Shapes */,
@@ -216,6 +222,31 @@
 				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
 			);
 			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		EA0F397414BF89E10071C365 /* ofxMSAInteractiveObject */ = {
+			isa = PBXGroup;
+			children = (
+				EA0F397514BF89FA0071C365 /* src */,
+			);
+			name = ofxMSAInteractiveObject;
+			sourceTree = "<group>";
+		};
+		EA0F397514BF89FA0071C365 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA0F398414BF8A0D0071C365 /* ofxMSAInteractiveObject.cpp */,
+				EA0F398514BF8A0D0071C365 /* ofxMSAInteractiveObject.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		EA0F39C014BF8D020071C365 /* Warp */ = {
+			isa = PBXGroup;
+			children = (
+				EA0F39C514BF8D2B0071C365 /* MyTestObject.h */,
+			);
+			name = Warp;
 			sourceTree = "<group>";
 		};
 		EA6945C2144D3249007B6B41 /* Shapes */ = {
@@ -365,6 +396,7 @@
 				EAB295C91469EF860007B482 /* OscHandler.cpp in Sources */,
 				EA76A7521473234400C4E116 /* DataModel.cpp in Sources */,
 				EA29D653148725A10053E097 /* Mesh2.cpp in Sources */,
+				EA0F398614BF8A0D0071C365 /* ofxMSAInteractiveObject.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +486,9 @@
 				OTHER_LDFLAGS = (
 					"$(OF_PATH)/addons/ofxOsc/libs/oscpack/lib/osx/osc.a",
 					"$(OF_CORE_LIBS)",
+					"$(OTHER_LDFLAGS_QUOTED_FOR_PROJECT_1)",
 				);
+				OTHER_LDFLAGS_QUOTED_FOR_PROJECT_1 = "\"$(SRCROOT)/../../../addons/ofxMSAInteractiveObject\"";
 			};
 			name = Release;
 		};

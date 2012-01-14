@@ -13,10 +13,11 @@ void testApp::setup(){
 	ofEnableAlphaBlending();	// turn on alpha blending
 	ofSetVerticalSync(true);
 	ofSetBackgroundAuto(true);  // set background to refresh always
+	
 	//	LINE
 	glEnable(GL_NORMALIZE);
 	glEnable(GL_LINE_SMOOTH);
-	ofEnableSmoothing();
+	
 	
 	// shade
 	glShadeModel (GL_SMOOTH);
@@ -52,7 +53,12 @@ void testApp::setup(){
 	lastWidth = 0;
 	lastHeight = 0;
 	
+	//warp
+	obj.setSize(400, 200);
+	
 }
+
+
 
 //--------------------------------------------------------------
 void testApp::update(){

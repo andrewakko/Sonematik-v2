@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "OscHandler.h"
 #include "DataModel.h"	
+#include "MyTestObject.h"
 
 
 #include "Mesh.h"
@@ -12,15 +13,21 @@
 #ifndef _TEST_APP
 #define _TEST_APP
 
+
+
+
+
 class testApp : public ofBaseApp{
 	
 public:
 	
-	//testApp();
+	
+	
 	
 	void setup();
 	void update();
 	void draw();
+	
 	
 	void keyPressed(int key);
 	void keyReleased(int key);
@@ -56,6 +63,9 @@ public:
 	// dispansable
 	int				mouseX, mouseY;
 	string			mouseButtonState;
+	
+	//warp
+	MyTestObject obj;
 	
 private:
 	DataModel data;
