@@ -50,6 +50,9 @@ public:
 	// INFOS
 	bool showMsg;
 	
+	//Mask
+	bool showMask;
+	
 	// FOG
 	float fogColor[4];
 	// fog
@@ -71,6 +74,8 @@ private:
 	OscHandler myOsc;
 	
 	void showInfo();
+	
+	
 	
 	ofFbo fbo;
 	ofImage     maskLayer;

@@ -68,7 +68,8 @@ void testApp::setup(){
     warper.setBottomRightCornerPosition( ofPoint( x + w, y + h ) ); // this is position of the quad warp corners, centering the image on the screen.
 	
 	maskLayer.loadImage("mask.png");
-	mask.allocate(w, h);
+	
+	mask.allocate(w,h);
 }
 
 //--------------------------------------------------------------
@@ -81,9 +82,9 @@ void testApp::update(){
     mask.begin();
     ofClear(255,255);
     ofSetColor(0,255);
-    ofCircle( 400, 400, 100);
+    ofCircle( ofGetScreenWidth()/2, ofGetScreenHeight()/2, 300);
     ofSetColor(255);
-    maskLayer.draw(0 , mouseY - 15);
+    maskLayer.draw(0 ,0);
     mask.end();
     
     mask.update();
@@ -138,8 +139,10 @@ void testApp::draw(){
     
     warper.draw();
 	
-	//mask
+	// MASK
+	if (showMask) {
 	mask.draw(0,0);
+	}
 	
 	// INFO 
 	
@@ -147,6 +150,7 @@ void testApp::draw(){
 		showInfo();
 	}
 }
+
 
 
 void testApp::showInfo(){
@@ -177,6 +181,8 @@ void testApp::keyPressed(int key){
 		case 'f': ofToggleFullscreen(); break;	
 		
 		case 'w':  warper.toggleShow(); break;
+			
+		case'm': showMask = ! showMask; break;
 			
 	}
 	
