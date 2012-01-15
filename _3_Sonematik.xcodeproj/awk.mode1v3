@@ -278,7 +278,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {209, 886}}</string>
+							<string>{{0, 0}, {209, 910}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -290,14 +290,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {226, 904}}</string>
+						<string>{{0, 0}, {226, 928}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>209</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>1280 -145 1600 945 1280 -200 1600 1000 </string>
+						<string>1280 -172 1280 969 1280 -224 1280 1024 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -327,7 +327,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>EAFAC57A14C2977600480FB5</string>
+										<string>EAFAC59F14C39C6000480FB5</string>
 										<key>history</key>
 										<array>
 											<string>EAD8985414624BBD0023B56B</string>
@@ -359,14 +359,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1369, 899}}</string>
+								<string>{{0, 0}, {1049, 923}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1280 -145 1600 945 1280 -200 1600 1000 </string>
+								<string>1280 -172 1280 969 1280 -224 1280 1024 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>899pt</string>
+							<string>923pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -379,9 +379,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 904}, {1369, 0}}</string>
+								<string>{{0, 928}, {1049, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1280 -145 1600 945 1280 -200 1600 1000 </string>
+								<string>1280 -172 1280 969 1280 -224 1280 1024 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -390,7 +390,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1369pt</string>
+					<string>1049pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -553,7 +553,7 @@
 		<string>/Users/awk/Documents/ProgramDoc/OpenFrameWorks/oF/openframeworks-openFrameworks-24512c4/apps/Sonematik Study/_3_2_Sonematik_/_3_Sonematik.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>1280 -145 1600 945 1280 -200 1600 1000 </string>
+	<string>1280 -172 1280 969 1280 -224 1280 1024 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
