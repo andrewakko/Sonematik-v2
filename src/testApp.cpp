@@ -13,11 +13,10 @@ void testApp::setup(){
 	ofEnableAlphaBlending();	// turn on alpha blending
 	ofSetVerticalSync(true);
 	ofSetBackgroundAuto(true);  // set background to refresh always
-	
 	//	LINE
 	glEnable(GL_NORMALIZE);
 	glEnable(GL_LINE_SMOOTH);
-	
+	ofEnableSmoothing();
 	
 	// shade
 	glShadeModel (GL_SMOOTH);
@@ -50,11 +49,6 @@ void testApp::setup(){
 	int texH  = 1000;
 	
 	
-<<<<<<< HEAD
-	//warp
-	obj.setSize(400, 200);
-	
-=======
 	// play in center // im not using thissss
 	centerX = texW * 0.5;
 	centerY = texH * -0.5;
@@ -72,10 +66,7 @@ void testApp::setup(){
     warper.setTopRightCornerPosition( ofPoint( x + w, y ) );        // this is position of the quad warp corners, centering the image on the screen.
     warper.setBottomLeftCornerPosition( ofPoint( x, y + h ) );      // this is position of the quad warp corners, centering the image on the screen.
     warper.setBottomRightCornerPosition( ofPoint( x + w, y + h ) ); // this is position of the quad warp corners, centering the image on the screen.
->>>>>>> 275a3846441ec63995d7ea9fcd320927a3165389
 }
-
-
 
 //--------------------------------------------------------------
 void testApp::update(){
