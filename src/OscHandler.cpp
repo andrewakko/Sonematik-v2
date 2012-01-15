@@ -77,6 +77,23 @@ void OscHandler :: update(){
 				data->rotateZ = m.getArgAsFloat( 0 );
 			}
 			
+			if ( m.getAddress() == "/live/Global/maskSize" )
+			{
+				data->maskSize = m.getArgAsFloat( 0 );
+			}
+			
+			if ( m.getAddress() == "/live/Global/maskPosX" )
+			{
+				data->maskPosX = m.getArgAsFloat( 0 );
+			}
+			
+			if ( m.getAddress() == "/live/Global/maskPosY" )
+			{
+				data->maskPosY = m.getArgAsFloat( 0 );
+			}
+			
+			
+			
 			
 			///////////////////////////////////////////// Mesh
 			

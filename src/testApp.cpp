@@ -83,7 +83,7 @@ void testApp::update(){
     mask.begin();
     ofClear(255,255);
     ofSetColor(0,255);
-    ofCircle( ofGetScreenWidth()/2, ofGetScreenHeight()/2, 300); // create a osc for control position and size.
+    ofCircle( data.maskPosX, data.maskPosY, data.maskSize); // control thru osc
     ofSetColor(255);
   //  maskLayer.draw(0 ,0);
     mask.end();

@@ -18,7 +18,11 @@ DataModel::DataModel(){
 	rotateX = 1;
 	rotateY = 1;
 	rotateZ = 1;
-		
+	
+	maskSize = 300;
+	maskPosX = 400;
+	maskPosY = 400;
+	
 	// MESH
 	
 	M1_form = true;

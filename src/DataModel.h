@@ -28,7 +28,9 @@ public:
 	
 	float scale;
 	
-	
+	float maskSize;
+	float maskPosX;
+	float maskPosY;
 	
 	// Mesh
 
