@@ -8,6 +8,7 @@
 #include "Mesh.h"
 #include "Mesh2.h"
 
+#include "ofxQuadWarp.h"
 
 #ifndef _TEST_APP
 #define _TEST_APP
@@ -33,6 +34,8 @@ public:
 	void gotMessage(ofMessage msg);		
 	
 	 
+	ofxQuadWarp warper; // quad warper
+	
 	ofEasyCam cam; // add mouse controls for camera movement
 		
 	// ajust translation center but can complicate with the vertex. check this out.

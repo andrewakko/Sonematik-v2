@@ -39,19 +39,33 @@ void testApp::setup(){
 	///
 	
 	showMsg = true; // for the info toggle
-	// play in center // im not using thissss
-	centerX = ofGetScreenWidth() * 0.5;
-	centerY = ofGetScreenHeight() * -0.5;
 	// fog
 	
 	lightDensity = 0.5;
 	fogStart=4.0;
 	fogEnd= 100.0;
 	
+	int texW  = 1000;
+	int texH  = 1000;
 	
-	lastWidth = 0;
-	lastHeight = 0;
 	
+	// play in center // im not using thissss
+	centerX = texW * 0.5;
+	centerY = texH * -0.5;
+	
+	ofSetWindowShape(texW + 20, texH + 20);
+	int x = 10;
+    int y = 10;
+    int w = texW;
+    int h = texH;
+    
+    fbo.allocate( w, h );
+    
+    warper.setSourceRect( ofRectangle( 0, 0, w, h ) );              // this is the source rectangle which is the size of the image and located at ( 0, 0 )
+    warper.setTopLeftCornerPosition( ofPoint( x, y ) );             // this is position of the quad warp corners, centering the image on the screen.
+    warper.setTopRightCornerPosition( ofPoint( x + w, y ) );        // this is position of the quad warp corners, centering the image on the screen.
+    warper.setBottomLeftCornerPosition( ofPoint( x, y + h ) );      // this is position of the quad warp corners, centering the image on the screen.
+    warper.setBottomRightCornerPosition( ofPoint( x + w, y + h ) ); // this is position of the quad warp corners, centering the image on the screen.
 }
 
 //--------------------------------------------------------------
@@ -59,14 +73,6 @@ void testApp::update(){
 	
 	myOsc.update();
 
-	
-	if( lastWidth != ofGetWidth() || lastHeight != ofGetWidth() ){
-		lastWidth = ofGetWidth();
-		lastHeight = ofGetWidth();
-		fbo.allocate(ofGetWidth(), ofGetHeight());
-	}
-	
-		
 }
 
 // --------------------------------------------------------------
@@ -96,7 +102,23 @@ void testApp::draw(){
 	ofPopStyle();
 	
 	fbo.end();
-	fbo.draw(0, 0);
+	
+	//======================== get our quad warp matrix.
+    
+    ofMatrix4x4 mat = warper.getMatrix();
+    
+    //======================== use the matrix to transform our fbo.
+    
+    glPushMatrix();
+    glMultMatrixf( mat.getPtr() );
+    {
+        fbo.draw( 0, 0 );
+    }
+    glPopMatrix();
+	
+	//======================== draw quad warp ui.
+    
+    warper.draw();
 	
 	// INFO 
 	
@@ -111,6 +133,7 @@ void testApp::showInfo(){
 	myOsc.draw();
 	ofSetColor(255,255,0,255);
 	string msg = ofToString("Use 'f' to toggle full");
+	msg += ofToString("\nUse 'w' to toggle warp settings");
 	msg += "\nfps: " + ofToString(ofGetFrameRate(), 2);
 	msg +=  "\ncamPos: " + ofToString(data.camPos,1);
 	msg +=  "\nlightDensity: " + ofToString(lightDensity,1);
@@ -131,6 +154,8 @@ void testApp::keyPressed(int key){
 			
 		case 'F':
 		case 'f': ofToggleFullscreen(); break;	
+		
+		case 'w':  warper.toggleShow(); break;
 			
 	}
 	
