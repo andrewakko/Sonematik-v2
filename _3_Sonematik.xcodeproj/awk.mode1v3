@@ -265,6 +265,7 @@
 							<array>
 								<string>E4B69B4A0A3A1720003C02F2</string>
 								<string>E4B69E1C0A3A1BDC003C02F2</string>
+								<string>BB4B014C10F69532006C3DED</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
@@ -326,7 +327,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>EAADB3BC14C282770029C19D</string>
+										<string>EAFAC53F14C292F700480FB5</string>
 										<key>history</key>
 										<array>
 											<string>EAD8985414624BBD0023B56B</string>
@@ -344,9 +345,10 @@
 											<string>EA5D2ABD14BD0121007B377F</string>
 											<string>EA5D2ABE14BD0121007B377F</string>
 											<string>EA5D2ABF14BD0121007B377F</string>
-											<string>EA5D2AC014BD0121007B377F</string>
-											<string>EA5D2AC114BD0121007B377F</string>
-											<string>EAADB3AE14C27FF50029C19D</string>
+											<string>EAFAC52414C290FB00480FB5</string>
+											<string>EAFAC52514C290FB00480FB5</string>
+											<string>EAFAC52D14C291EC00480FB5</string>
+											<string>EAFAC50214C28FFC00480FB5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -404,9 +406,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>EAADB3BD14C282770029C19D</string>
+				<string>EAFAC37D14C28F2F00480FB5</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>EAADB3BE14C282770029C19D</string>
+				<string>EAFAC37E14C28F2F00480FB5</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -544,6 +546,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>EAFAC50514C28FFC00480FB5</string>
+		<string>EAFAC50614C28FFC00480FB5</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>EA5E1328143BB0EA00CDF7C6</string>
 		<string>/Users/awk/Documents/ProgramDoc/OpenFrameWorks/oF/openframeworks-openFrameworks-24512c4/apps/Sonematik Study/_3_2_Sonematik_/_3_Sonematik.xcodeproj</string>
 	</array>
@@ -569,7 +575,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>testApp.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -586,6 +592,8 @@
 							<string>236pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -625,7 +633,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>EA5E1328143BB0EA00CDF7C6</string>
-				<string>EAADB3BF14C282770029C19D</string>
+				<string>EAFAC37F14C28F2F00480FB5</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -638,7 +646,7 @@
 			<key>WindowToolGUID</key>
 			<string>EA5E1328143BB0EA00CDF7C6</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -747,13 +755,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>EA5D2AC714BD0121007B377F</string>
+				<string>EAFAC4FA14C28FFB00480FB5</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>EA5D2AC814BD0121007B377F</string>
-				<string>EA5D2AC914BD0121007B377F</string>
-				<string>EA5D2ACA14BD0121007B377F</string>
-				<string>EA5D2ACB14BD0121007B377F</string>
-				<string>EA5D2ACC14BD0121007B377F</string>
+				<string>EAFAC4FB14C28FFB00480FB5</string>
+				<string>EAFAC4FC14C28FFB00480FB5</string>
+				<string>EAFAC4FD14C28FFB00480FB5</string>
+				<string>EAFAC4FE14C28FFB00480FB5</string>
+				<string>EAFAC4FF14C28FFB00480FB5</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -915,7 +923,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>EA5D2ACD14BD0121007B377F</string>
+				<string>EAFAC50014C28FFB00480FB5</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

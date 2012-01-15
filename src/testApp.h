@@ -9,6 +9,8 @@
 #include "Mesh2.h"
 
 #include "ofxQuadWarp.h"
+#include "ofxFX.h"
+
 
 #ifndef _TEST_APP
 #define _TEST_APP
@@ -71,6 +73,9 @@ private:
 	void showInfo();
 	
 	ofFbo fbo;
+	ofImage     maskLayer;
+    
+    ofxMask     mask;
 	
 };
 

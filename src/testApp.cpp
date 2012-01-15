@@ -66,17 +66,35 @@ void testApp::setup(){
     warper.setTopRightCornerPosition( ofPoint( x + w, y ) );        // this is position of the quad warp corners, centering the image on the screen.
     warper.setBottomLeftCornerPosition( ofPoint( x, y + h ) );      // this is position of the quad warp corners, centering the image on the screen.
     warper.setBottomRightCornerPosition( ofPoint( x + w, y + h ) ); // this is position of the quad warp corners, centering the image on the screen.
+	
+	maskLayer.loadImage("mask.png");
+	mask.allocate(w, h);
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
 	
 	myOsc.update();
+	
+	
+	// MASK
+    mask.begin();
+    ofClear(255,255);
+    ofSetColor(0,255);
+    ofCircle( 400, 400, 100);
+    ofSetColor(255);
+    maskLayer.draw(0 , mouseY - 15);
+    mask.end();
+    
+    mask.update();
+	
 
 }
 
 // --------------------------------------------------------------
 void testApp::draw(){
+	
+	
 	
 	glClearColor(data.blackWhite, data.blackWhite, data.blackWhite, 1.0); 
 	
@@ -119,6 +137,9 @@ void testApp::draw(){
 	//======================== draw quad warp ui.
     
     warper.draw();
+	
+	//mask
+	mask.draw(0,0);
 	
 	// INFO 
 	

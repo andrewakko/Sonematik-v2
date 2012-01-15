@@ -155,6 +155,9 @@
 		EA6945C7144D3268007B6B41 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA6945C6144D3268007B6B41 /* Mesh.cpp */; };
 		EA76A7521473234400C4E116 /* DataModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA76A7511473234400C4E116 /* DataModel.cpp */; };
 		EAB295C91469EF860007B482 /* OscHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB295C81469EF860007B482 /* OscHandler.cpp */; };
+		EAFAC51E14C290D200480FB5 /* ofxFlocking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAFAC51114C290D200480FB5 /* ofxFlocking.cpp */; };
+		EAFAC51F14C290D200480FB5 /* ofxFluid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAFAC51314C290D200480FB5 /* ofxFluid.cpp */; };
+		EAFAC52014C290D200480FB5 /* ofxWater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAFAC51C14C290D200480FB5 /* ofxWater.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -382,6 +385,24 @@
 		EA76A7511473234400C4E116 /* DataModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataModel.cpp; sourceTree = "<group>"; };
 		EAB295C71469EF860007B482 /* OscHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscHandler.h; sourceTree = "<group>"; };
 		EAB295C81469EF860007B482 /* OscHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscHandler.cpp; sourceTree = "<group>"; };
+		EAFAC50B14C290D200480FB5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../../../addons/ofxFX/README.md; sourceTree = SOURCE_ROOT; };
+		EAFAC50D14C290D200480FB5 /* ofxBloom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBloom.h; sourceTree = "<group>"; };
+		EAFAC50E14C290D200480FB5 /* ofxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBlur.h; sourceTree = "<group>"; };
+		EAFAC50F14C290D200480FB5 /* ofxBlurFast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBlurFast.h; sourceTree = "<group>"; };
+		EAFAC51014C290D200480FB5 /* ofxConway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxConway.h; sourceTree = "<group>"; };
+		EAFAC51114C290D200480FB5 /* ofxFlocking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxFlocking.cpp; sourceTree = "<group>"; };
+		EAFAC51214C290D200480FB5 /* ofxFlocking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFlocking.h; sourceTree = "<group>"; };
+		EAFAC51314C290D200480FB5 /* ofxFluid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxFluid.cpp; sourceTree = "<group>"; };
+		EAFAC51414C290D200480FB5 /* ofxFluid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFluid.h; sourceTree = "<group>"; };
+		EAFAC51514C290D200480FB5 /* ofxFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFX.h; sourceTree = "<group>"; };
+		EAFAC51614C290D200480FB5 /* ofxFXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFXObject.h; sourceTree = "<group>"; };
+		EAFAC51714C290D200480FB5 /* ofxGlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGlow.h; sourceTree = "<group>"; };
+		EAFAC51814C290D200480FB5 /* ofxGrayScott.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGrayScott.h; sourceTree = "<group>"; };
+		EAFAC51914C290D200480FB5 /* ofxMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMask.h; sourceTree = "<group>"; };
+		EAFAC51A14C290D200480FB5 /* ofxOldTv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOldTv.h; sourceTree = "<group>"; };
+		EAFAC51B14C290D200480FB5 /* ofxSwapBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSwapBuffer.h; sourceTree = "<group>"; };
+		EAFAC51C14C290D200480FB5 /* ofxWater.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxWater.cpp; sourceTree = "<group>"; };
+		EAFAC51D14C290D200480FB5 /* ofxWater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxWater.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -955,6 +976,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				EAFAC52114C290DC00480FB5 /* ofxFX */,
 				38850C9A14C245E000E8F88A /* ofxOsc */,
 				38850B3E14C243D500E8F88A /* ofxOpenCv */,
 				388509D614C2434800E8F88A /* ofxMSAInteractiveObject */,
@@ -1071,6 +1093,40 @@
 			name = Osc;
 			sourceTree = "<group>";
 		};
+		EAFAC50C14C290D200480FB5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EAFAC50D14C290D200480FB5 /* ofxBloom.h */,
+				EAFAC50E14C290D200480FB5 /* ofxBlur.h */,
+				EAFAC50F14C290D200480FB5 /* ofxBlurFast.h */,
+				EAFAC51014C290D200480FB5 /* ofxConway.h */,
+				EAFAC51114C290D200480FB5 /* ofxFlocking.cpp */,
+				EAFAC51214C290D200480FB5 /* ofxFlocking.h */,
+				EAFAC51314C290D200480FB5 /* ofxFluid.cpp */,
+				EAFAC51414C290D200480FB5 /* ofxFluid.h */,
+				EAFAC51514C290D200480FB5 /* ofxFX.h */,
+				EAFAC51614C290D200480FB5 /* ofxFXObject.h */,
+				EAFAC51714C290D200480FB5 /* ofxGlow.h */,
+				EAFAC51814C290D200480FB5 /* ofxGrayScott.h */,
+				EAFAC51914C290D200480FB5 /* ofxMask.h */,
+				EAFAC51A14C290D200480FB5 /* ofxOldTv.h */,
+				EAFAC51B14C290D200480FB5 /* ofxSwapBuffer.h */,
+				EAFAC51C14C290D200480FB5 /* ofxWater.cpp */,
+				EAFAC51D14C290D200480FB5 /* ofxWater.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxFX/src;
+			sourceTree = SOURCE_ROOT;
+		};
+		EAFAC52114C290DC00480FB5 /* ofxFX */ = {
+			isa = PBXGroup;
+			children = (
+				EAFAC50B14C290D200480FB5 /* README.md */,
+				EAFAC50C14C290D200480FB5 /* src */,
+			);
+			name = ofxFX;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1173,6 +1229,9 @@
 				38850CD514C245E100E8F88A /* ofxOscMessage.cpp in Sources */,
 				38850CD614C245E100E8F88A /* ofxOscReceiver.cpp in Sources */,
 				38850CD714C245E100E8F88A /* ofxOscSender.cpp in Sources */,
+				EAFAC51E14C290D200480FB5 /* ofxFlocking.cpp in Sources */,
+				EAFAC51F14C290D200480FB5 /* ofxFluid.cpp in Sources */,
+				EAFAC52014C290D200480FB5 /* ofxWater.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
